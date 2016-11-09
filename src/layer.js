@@ -267,6 +267,7 @@
         //建立容器
         that.vessel(conType, function(html, titleHTML){
             var relativeDom = $(that.config.relativeDom).length ? that.config.relativeDom : 'body';
+            $(relativeDom).append(html[0]);
             conType ? function(){
                 (config.type == 2 || config.type == 4) ? function(){
                     $(relativeDom).append(html[1]);
@@ -350,7 +351,6 @@
         var area = [layero.outerWidth(), layero.outerHeight()];
         var type = typeof config.offset === 'object';
         win = $(that.config.relativeDom).length ? $(that.config.relativeDom) : win;
-        console.log(that.config)
         that.offsetTop = (win.height() - area[1])/2;
         that.offsetLeft = (win.width() - area[0])/2;
         if(type){
