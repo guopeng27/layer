@@ -224,6 +224,7 @@ Class.pt.vessel = function(conType, callback){
       }() : '')
     +'</div>'
   ], titleHTML);
+
   return that;
 };
 
@@ -265,17 +266,17 @@ Class.pt.creat = function(){
   
   //建立容器
   that.vessel(conType, function(html, titleHTML){
-    $('body').append(html[0]);
+    var relativeDom = $(that.config.relativeDom).length ? that.config.relativeDom : 'body';
     conType ? function(){
       (config.type == 2 || config.type == 4) ? function(){
-        $('body').append(html[1]);
+        $(relativeDom).append(html[1]);
       }() : function(){
         if(!content.parents('.'+doms[0])[0]){
           content.show().addClass('layui-layer-wrap').wrap(html[1]);
           $('#'+ doms[0] + times).find('.'+doms[5]).before(titleHTML);
         }
       }();
-    }() : $('body').append(html[1]);
+    }() : $(relativeDom).append(html[1]);
     that.layero = $('#'+ doms[0] + times);
     config.scrollbar || doms.html.css('overflow', 'hidden').attr('layer-full', times);
   }).auto(times);
