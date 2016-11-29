@@ -8,9 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/skin/default/layer.css">
     <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="build/layer.js"></script>
+    <script type="text/javascript" src="src/layer.js"></script>
 </head>
 <body>
-	<div id="aaa"></div>
+	<div id="aaa" style="height: 100px;width:100px;background: red;position:relative"></div>
+	<div id="bbb" style="height: 100px;width:100px;background: blue;position:relative"></div>
+	<script type="text/javascript">
+	layer.load(1,{relativeDom:'#aaa'});
+	layer.load(1,{relativeDom:'#bbb'});
+	</script>
 </body>
 </html>

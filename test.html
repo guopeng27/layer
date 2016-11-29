@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='trace ng-scope'><span class='time ng-binding'>2016-11-09 09:55:10</span>
+        <div class='trace-type'><span ng-class='event.type' class='delivery iconfont icon-right'></span></div>
+        <div class='detail'>
+            <div class='event-name ng-binding'><strong>回单</strong></div>
+            <div class='description ng-binding'>
+                <span class='username ng-binding'>wangzhi</span>在
+                <span class='address ng-binding'>上海市徐汇区钦江路88号</span> 完成 回单
+            </div>
+            <div class='photos'>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_credential'>单据</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095343643610.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095343643610.png' onclick='showOriginal(this)'></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class='trace ng-scope'><span class='time ng-binding'>2016-11-09 09:55:10</span>
+        <div class='trace-type'><span ng-class='event.type' class='halfway iconfont icon-halfway'></span></div>
+        <div class='detail'>
+            <div class='event-name ng-binding'><strong>送达</strong></div>
+            <div class='description ng-binding'>
+                <span class='username ng-binding'>wangzhi</span>在
+                <span class='address ng-binding'>上海市徐汇区钦江路88号</span> 完成 送达
+            </div>
+            <div class='photos'>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_goods'>货物</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095343643498.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095343643498.png' onclick='showOriginal(this)'>
+                </div>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_goods'>货物</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095343643556.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095343643556.png' onclick='showOriginal(this)'>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class='trace ng-scope'><span class='time ng-binding'>2016-11-09 09:54:52</span>
+        <div class='trace-type'><span ng-class='event.type' class='pickupSign iconfont icon-pickupSign'></span></div>
+        <div class='detail'>
+            <div class='event-name ng-binding'><strong>提货</strong></div>
+            <div class='description ng-binding'>
+                <span class='username ng-binding'>wangzhi</span>在
+                <span class='address ng-binding'>上海市徐汇区钦江路88号</span> 完成 提货
+            </div>
+            <div class='photos'>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_goods'>货物</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756137.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756137.png' onclick='showOriginal(this)'>
+                </div>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_goods'>货物</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756061.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756061.png' onclick='showOriginal(this)'>
+                </div>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_credential'>单据</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756218.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756218.png' onclick='showOriginal(this)'></div>
+                <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+                    <div class='tag tag_credential'>单据</div>
+                    <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756182.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095325756182.png' onclick='showOriginal(this)'></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class='trace ng-scope'><span class='time ng-binding'>2016-11-09 09:54:37</span>
+        <div class='trace-type'><span ng-class='event.type' class='pickupSign iconfont icon-pickupSign'></span></div>
+        <div class='detail'>
+            <div class='event-name ng-binding'><strong>提货签到</strong></div>
+            <div class='description ng-binding'>
+                <span class='username ng-binding'>wangzhi</span>在
+                <span class='address ng-binding'>上海市徐汇区苍梧路473号</span> 完成 提货签到
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class='trace' style='margin-bottom:2px;'>
+        <span class='time ng-binding'>2016-11-09 09:54:08 </span>
+        <div class='trace-type'><span class='create iconfont icon-create'></span></div>
+        <div class='detail'>
+            <div class='event-name'><strong>创建订单</strong></div>
+            <div class='description'>
+                <span class='username ng-binding'>
+                                                     
+                                                </span>
+                <span> 始发地： 上海市徐汇区 目的地：上海市徐汇区</span>
+            </div>
+        </div>
+    </div>
+    <div class='photos'>
+        <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+            <div class='tag tag_goods'>货物</div>
+            <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095241813065.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095241813065.png' onclick='showOriginal(this)'>
+        </div>
+        <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+            <div class='tag tag_goods'>货物</div>
+            <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095241813151.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095241813151.png' onclick='showOriginal(this)'>
+        </div>
+        <div class='photo goods ng-scope' ng-repeat='photo in event.goods_photos'>
+            <div class='tag tag_goods'>货物</div>
+            <img src='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095241813188.png' original='http://testwtmsshoss.oss-cn-shanghai.aliyuncs.com/1306189593720161109095241813188.png' onclick='showOriginal(this)'>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

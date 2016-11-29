@@ -25,7 +25,7 @@ var task = {
     
   }
   ,mobile: function() {
-    return gulp.src('./src/mobile/layer.js').pipe(uglify())
+    return gulp.src('./src/mobile/layer.js').pipe(uglify({ compress: false }))
      .pipe(header('/*! <%= pkg.name %> mobile-v<%= pkg.mobile %> <%= pkg.description %> <%= pkg.license %> License  <%= pkg.homepage %>mobile  By <%= pkg.author %> */\n ;', {pkg: pkg}))
     .pipe(gulp.dest('./build/mobile'));
   }

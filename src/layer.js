@@ -242,7 +242,7 @@
         switch(config.type){
             case 0:
                 config.btn = ('btn' in config) ? config.btn : ready.btn[0];
-                layer.closeAll('dialog');
+                //layer.closeAll('dialog');
                 break;
             case 2:
                 var content = config.content = conType ? config.content : [config.content||'http://layer.layui.com', 'auto'];
@@ -252,7 +252,7 @@
                 config.title = false;
                 config.closeBtn = false;
                 config.icon === -1 && (config.icon === 0);
-                layer.closeAll('loading');
+                //layer.closeAll('loading');
                 break;
             case 4:
                 conType || (config.content = [config.content, 'body']);
